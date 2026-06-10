@@ -10,8 +10,8 @@ intents.message_content = True
 client = discord.Client(intents=intents)
 
 short_urls = ['youtu.be', 'bit.ly', 'tiny.cc', 't.co','g.co','tinyurl.com','t.me','x.co']
-base_urls = ['www.facebook.com', 'www.instagram.com', 'twitter.com', 'x.com', 'www.reddit.com']
-replacement_urls = {'www.facebook.com':'facebed.com', 'www.instagram.com':'www.kkinstagram.com', 'x.com':'nitter.net', 'twitter.com':'nitter.net', 'www.reddit.com':'www.rxddit.com'}
+base_urls = ['www.facebook.com', 'www.instagram.com', 'twitter.com', 'x.com']
+replacement_urls = {'www.facebook.com':'facebed.com', 'www.instagram.com':'www.kkinstagram.com', 'x.com':'nitter.net', 'twitter.com':'nitter.net'}
 
 def embed_url(url):
     url_to_replace = base_urls[base_urls.index(strip_url(url))]
