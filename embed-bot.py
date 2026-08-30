@@ -35,7 +35,7 @@ async def on_message(message):
     # against infinite recursion
     else:
         # Extract links and clean
-        urls = re.findall('(?P<url>https?://[^\s]+)', message.content)
+        urls = re.findall('(?P<url>https?://[^s]+)', message.content)
         cleaned = []
         for url in urls:
             # Ignore trailing & in comparing, as these are not used for tracking
